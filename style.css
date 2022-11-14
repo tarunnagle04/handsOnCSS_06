@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-image: url(IMG-20221109-WA0009.jpg);
+}
+
+#camel1 {
+    height: 50px;
+    width: 50px;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+#hamberger {
+    position: relative;
+    bottom: 18px;
+}
+
+i {
+    padding-top: 20px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    color: white;
+    width: 350.6px;
+    margin-right: 50px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 15px;
+    padding-top: 15px;
+    /* margin-top: 10px; */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 500ms;
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.247);
+}
+
+.one {
+    background-image: url(IMG-20221109-WA0009.jpg);
+    color: white;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.two {
+    background-image: url(IMG-20221109-WA0010.jpg);
+    color: white;
+    background-size: cover;
+}
+
+.three {
+    background-image: url(IMG-20221109-WA0006.jpg);
+    color: white;
+    background-size: cover;
+}
+
+.four {
+    background-image: url(IMG-20221109-WA0008.jpg);
+    color: white;
+    background-size: cover;
+}
+
+#sahara {
+    font-size: 100px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#desc {
+    color: white;
+    margin-left: 103px;
+    width: 600.67px;
+    height: 100.333px;
+}
+
+#explore {
+    /* width: ; */
+    background-color: white;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    padding-left: 16px;
+    padding-top: 8px;
+    position: relative;
+    left: 100px;
+    /* margin-top: 0px; */
+}
+
+#cards {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    left: 700px;
+    bottom: 300px;
+    grid-column-gap: 50px;
+}
+
+@media screen and (max-width:412px) {
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 382.6px;
+        margin-left: 100px;
+    }
+    #sahara {
+        font-size: 60px;
+        margin-left: 50px;
+        position: relative;
+        bottom: 40px;
+    }
+    #desc {
+        margin-left: 50px;
+        width: 305.67px;
+        position: relative;
+        bottom: 40px;
+    }
+    #explore {
+        margin-left: -50px;
+        margin-top: 30px;
+        position: relative;
+        bottom: 40px;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        padding: 15px;
+        padding-top: 15px;
+        /* margin-top: 10px; */
+        position: relative;
+        right: 640px;
+        top: 300px;
+        margin-bottom: 25px;
+    }
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* display: grid; */
+    i {
+        position: relative;
+        left: 100px;
+        bottom: 35px;
+    }
+}
+@media screen and (max-width:900px) and (min-width:361px)
+{
+    #cards{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 50px;
+        top: 50px;
+    }
+    .card{
+        width: 600px;
+        margin: 20px;
+    }
+}
